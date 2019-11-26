@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Video.js Sandbox</title>
+  <link href="video-js.min.css" rel="stylesheet" type="text/css">
+  <script src="video.min.js"></script>
+</head>
+<body>
+<center>
+  <video-js
+    id="vid1"
+    controls
+    preload="auto"
+    width="640"
+    height="264">
+    <source src="http://13.52.183.194:8080/hls/netfan.m3u8" type="application/x-mpegURL">
+  </video-js>
+</center>
+  <script>
+    var vid = document.getElementById('vid1');
+    var player = videojs(vid);
+
+  </script>
+
+</body>
+</html>
